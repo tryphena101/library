@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    	<script src="index.js" defer></script>
     </head>
   <body>
     <nav class="site-nav">
@@ -29,6 +30,40 @@
       Copyright © 2022 tryphena101
 		</div>
 	</footer>
-	<script src="index.js"></script>
+  <div class="modal" id ="addBookModal">
+    <form class = "add-book-form" id = "addBookForm">
+      <span class="close">&times;</span>
+      <h4>Add new book</h4>
+      <input
+        class="input"
+        type="text"
+        id="title"
+        placeholder="Title"
+        required maxlength="100"
+        />
+      <input
+      class="input"
+      type="text"
+      id="author"
+      placeholder="Author"
+      required maxlength="100"
+      />
+      <input
+      class="input"
+      type="number"
+      id="pages"
+      placeholder="Pages"
+      required maxlength="10000"
+      />
+      <div class="is-read">
+        <label for="is-read">Have you read it?</label>
+        <input class="checkbok" type="checkbox" id="isRead" />
+      </div>
+      <button class ="btn btn-submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+
+
   </body>
 </html>
